@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="result">
+            <input type="text" id="input">
+        </div>
+        <div class="row" id="spc">
+            <button class="btn" id="sp" onclick="clearAll()">AC</button>
+            <button class="btn" id="sp" onclick="cleared()">C</button>
+            <button class="btn"  onclick="takeValue('%')" id="sp">%</button>
+            <button class="btn"  onclick="takeValue('/')" id="sp">/</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="takeValue(1)">1</button>
+            <button class="btn" onclick="takeValue(2)">2</button>
+            <button class="btn" onclick="takeValue(3)">3</button>
+            <button class="btn"  onclick="takeValue('*')" id="sp">*</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="takeValue(4)">4</button>
+            <button class="btn" onclick="takeValue(5)">5</button>
+            <button class="btn" onclick="takeValue(6)">6</button>
+            <button class="btn"  onclick="takeValue('-')" id="sp">-</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="takeValue(7)">7</button>
+            <button class="btn" onclick="takeValue(8)">8</button>
+            <button class="btn" onclick="takeValue(9)">9</button>
+            <button class="btn"  onclick="takeValue('+')" id="sp">+</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="takeValue('00')">00</button>
+            <button class="btn" onclick="takeValue(0)">0</button>
+            <button class="btn"  onclick="takeValue('.')">.</button>
+            <button class="btn"  onclick="solve()" id="sp">=</button>
+        </div>
+
+    </div>
+    <script src="calci.js"></script>
+</body>
+
+</html>
